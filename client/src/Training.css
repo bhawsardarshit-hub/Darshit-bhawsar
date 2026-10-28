@@ -1,0 +1,161 @@
+
+.training-page {
+  padding: 24px;
+  color: #202344;
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.training-header h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.training-header p {
+  margin: 0;
+  color: #777b91;
+}
+
+.training-count,
+.training-category {
+  background: #eeebff;
+  color: #6554e8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.training-form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 20px rgba(30, 35, 80, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 750px;
+}
+
+.training-form h3,
+.training-list h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.training-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.training-form input,
+.training-form textarea,
+.training-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #e0e2ed;
+  border-radius: 9px;
+  font: inherit;
+  background: #fff;
+  color: #202344;
+}
+
+.training-form input:focus,
+.training-form textarea:focus,
+.training-form select:focus {
+  outline: none;
+  border-color: #6554e8;
+}
+
+.training-form button {
+  margin-top: 12px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #6554e8;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.training-form button:hover {
+  background: #4d3bc7;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.training-card {
+  background: #fff;
+  padding: 22px;
+  border: 1px solid #eeeef5;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(30, 35, 80, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.training-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(30, 35, 80, 0.1);
+}
+
+.training-card h4 {
+  margin: 16px 0 10px;
+  font-size: 18px;
+}
+
+.training-card p {
+  color: #777b91;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.training-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #eeeef5;
+  color: #555970;
+  font-size: 13px;
+}
+
+.training-error {
+  color: #d93025;
+  margin-bottom: 16px;
+}
+
+.training-success {
+  color: #18864b;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .training-page {
+    padding: 15px;
+  }
+
+  .training-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .training-form {
+    padding: 18px;
+  }
+}
